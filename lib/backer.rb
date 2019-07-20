@@ -1,5 +1,4 @@
 class Backer
-  require 'pry'
   attr_reader :name
   attr_accessor :backed_projects
 
@@ -8,9 +7,13 @@ class Backer
     @backed_projects = []
   end
 
-def back_project(title)
-    backed_projects << title
-    binding.pry
+def back_project(project)
+    project << title
+
 end
 
 end
+
+  def add_backer(backer)
+
+  end
