@@ -1,12 +1,16 @@
 class Backer
+  require 'pry'
   attr_reader :name
+  attr_accessor :backed_projects
 
-  def initializes(name)
-    @name
+  def initialize(name)
+    @name = name
+    @backed_projects = []
   end
 
-
-
-
+def back_project(title)
+    backed_projects << title
+    binding.pry
+end
 
 end
